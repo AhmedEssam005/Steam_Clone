@@ -68,7 +68,7 @@ docker pull ahmedessam05/steam-clone:1.0
 Run the container:
 
 ```bash
-docker run -p 3000:3000 --env-file .env ahmedessam05/steam-clone:1.0
+docker run -p 3000:3000 --env-file .env -v <VolumeName>:/app/uploads ahmedessam05/steam-clone:1.0
 ```
 
 > The application still requires its external services, such as MongoDB, Resend, and IGDB.
